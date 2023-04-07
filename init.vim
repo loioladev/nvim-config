@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'honza/vim-snippets'
