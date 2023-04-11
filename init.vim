@@ -2,9 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
 Plug 'honza/vim-snippets'
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' } 
-Plug 'EdenEast/nightfox.nvim'
-Plug 'rebelot/kanagawa.nvim'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
@@ -27,5 +24,3 @@ set expandtab
 
 set termguicolors
 colorscheme tokyonight-night
-
-
