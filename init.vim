@@ -12,9 +12,18 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
 let g:tex_flavor='latex'
-let g:vimtex_wuickfix_mode=0
+let g:vimtex_quickfix_mode=0
 set conceallevel=1
+let g:vimtex_compiler_latexmk = {
+      \ 'executable': 'latexmk',
+      \ 'options': [
+            \ '-shell-escape',
+        \ ],
+      \ }
+let g:vimtex_view_general_options = '-reuse-instance'
 let g:tex_conceal='abdmg'
+let g:vimtex_complete_enabled=1
+let g:vimtex_view_method='zathura'
 set encoding=utf-8
 
 let g:UltiSnipsExpandTrigger = '<tab>'
